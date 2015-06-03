@@ -4,15 +4,20 @@ WiFi Serial Tranceiver Library for AT Commands
 ## Structure
 ```
 .
-|-- example (sample applications)
-|   |-- mqtt
-|   `-- test
-|-- inc (common headers)
+|-- env.sh
+|-- libwifi-serial/ (common library source)
+|   |-- build.mk
+|   |-- inc/
+|   `-- src/
 |-- LICENSE
+|-- Makefile
+|-- modules.mk
+|-- mqttpub/ (mqtt publisher sample)
+|-- mqttsub/ (mqtt subscriber sample)
 |-- README.md
-`-- src (library source)
+`-- wstool/ (command line tool)
 ```
 
 ## Applications
-* Basic test application for ESP8266 on Linux.
+* wifi-serial-tool (wstool) command line tool for ESP8266 on Linux.
 * MQTT subscriber/publisher based on ESP8266 WiFi Serial Tranceiver.
