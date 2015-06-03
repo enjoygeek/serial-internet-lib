@@ -1,11 +1,14 @@
-# wifi-serial-lib
-WiFi Serial Tranceiver Library for AT Commands
+# serial-internet-lib
+Serial to Internet Tranceiver Library for AT Commands
+modules:
+* ESP8266
+* USR-GM1 (TBD)
 
 ## Structure
 ```
 .
 |-- env.sh
-|-- libwifi-serial/ (common library source)
+|-- libserinet/ (common library source)
 |   |-- build.mk
 |   |-- inc/
 |   `-- src/
@@ -15,9 +18,9 @@ WiFi Serial Tranceiver Library for AT Commands
 |-- mqttpub/ (mqtt publisher sample)
 |-- mqttsub/ (mqtt subscriber sample)
 |-- README.md
-`-- wstool/ (command line tool)
+`-- sitool/ (command line tool)
 ```
 
 ## Applications
-* wifi-serial-tool (wstool) command line tool for ESP8266 on Linux.
+* serial-internet-tool (sitool) command line tool for ESP8266 on Linux.
 * MQTT subscriber/publisher based on ESP8266 WiFi Serial Tranceiver.

@@ -6,11 +6,11 @@
 #                 For external libraries, add -L & -l to local LDFLAGS instead.
 ##
 
-CFLAGS_wstool := \
-	-I$(SRCDIR)/libwifi-serial/inc
-LDFLAGS_wstool := -L$(LIBDIR) -lwifi-serial
-BINARY_wstool := wstool
-LIBRARIES_wstool := libwifi-serial.a
+CFLAGS_sitool := \
+	-I$(SRCDIR)/libserinet/inc
+LDFLAGS_sitool := -L$(LIBDIR) -lserinet
+BINARY_sitool := sitool
+LIBRARIES_sitool := libserinet.a
 
-SOURCES_wstool := \
+SOURCES_sitool := \
 	main.c

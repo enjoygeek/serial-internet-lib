@@ -6,11 +6,11 @@
 #                 For external libraries, add -L & -l to local LDFLAGS instead.
 ##
 
-CFLAGS_libwifi-serial := \
+CFLAGS_libserinet := \
 	-fPIC
-LDFLAGS_libwifi-serial :=
-LIBRARY_libwifi-serial := libwifi-serial
-LIBRARIES_libwifi-serial :=
+LDFLAGS_libserinet :=
+LIBRARY_libserinet := libserinet
+LIBRARIES_libserinet :=
 
-SOURCES_libwifi-serial := \
+SOURCES_libserinet := \
 	src/netops.c
